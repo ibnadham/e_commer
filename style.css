@@ -206,7 +206,7 @@ hr{
 
 
 .pro-container{
-    grid-template-columns: 33% 41% 26%;
+    grid-template-columns: 1fr 2fr 1fr;
     grid-gap: 2em;
     margin: 2.5rem 10%;
 }
@@ -414,12 +414,12 @@ button {
 
 .face{
     background-color: #385c8e;
-    padding: 0.8em 2.5em;
+    padding: 0.8em 2.7em;
 }
 
 .twit{
     background-color: #03A9F4;
-    padding: 0.8em 3.3em;
+    padding: 0.8em 3.5em;
 }
 
 
