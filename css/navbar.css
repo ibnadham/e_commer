@@ -1,0 +1,380 @@
+/* Navbar  CSS top */
+
+/* Google font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue-color: #40bfff;
+  --reder-color: #ff4858;
+  --light-blue: #bcddfe;
+  --grey-color: #373737;
+  --nav-text__color: #262626;
+}
+
+.search-bar {
+  display: none;
+}
+
+.shopping-card {
+  display: flex;
+}
+.shopping-card__counter {
+  position: relative;
+  font-size: 14.5px;
+  font-weight: bold;
+  bottom: 11px;
+  right: 13px;
+  background-color: #ff5266;
+  color: white;
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  border-radius: 50%;
+  border: 2.5px solid white;
+}
+
+/* NAVIGATION */
+.nav {
+  background-color: #ffffff;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  z-index: 100;
+}
+
+nav .container {
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.first-nav {
+  padding: 8px 0;
+}
+
+.second-nav {
+  padding: 14px 0;
+}
+
+.first-nav,
+.first-nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: nowrap;
+}
+
+/* ///////// FONT AWESOME ICON  */
+
+.fa-user {
+  font-size: 17px;
+  margin: 0 5px 0 0;
+}
+
+.fa-magnifying-glass {
+  margin-left: 6px;
+}
+
+.heart {
+  list-style: none;
+}
+
+/* nav and stickly class at the same time */
+.nav.sticky {
+  position: fixed;
+  background-color: #ffffff;
+}
+
+.first-nav__navigations li {
+  margin-left: 2em;
+}
+
+hr {
+  border-top: 0.5px solid #f5f5f5;
+}
+
+.first-nav__item a,
+.nav-item a {
+  text-decoration: none;
+  color: var(--nav-text__color);
+  font-weight: 400;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.first-nav__item,
+.nav-item,
+.search,
+.select-box__item,
+.logo-item {
+  list-style: none;
+}
+
+li a:hover {
+  color: var(--blue-color);
+}
+
+.dollor a {
+  font-weight: 200;
+  color: #3a3a3a;
+}
+
+/* ==============Select option style=========== */
+
+/*the container must be positioned relative:*/
+.custom-select {
+  position: relative;
+  padding: 0 5px 0 0;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color: #ffffff;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 18px;
+  right: 5px;
+  width: 0;
+  height: 0;
+  border: 4px solid transparent;
+  border-color: var(--nav-text__color) transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent var(--nav-text__color) transparent;
+  top: 13px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,
+.select-selected {
+  color: var(--nav-text__color);
+  padding: 8px 16px 8px 0;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.3s;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: #ffffff;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  background-color: #e5e5e5;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+/* ====================/Select option style=============== */
+
+/* Second navigation */
+
+.second-nav,
+.nav-menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.second-nav {
+  justify-content: space-between;
+}
+
+.nav-menu li {
+  text-transform: uppercase;
+  margin-left: 3rem;
+}
+.nav-menu li a {
+  font-weight: 500;
+}
+
+/* Style the active class (and buttons on mouse-over) */
+
+.nav-item .active,
+.nav-menu > a:hover {
+  color: var(--blue-color);
+}
+
+.fa-audio-description {
+  background-color: white;
+  color: var(--blue-color);
+  font-size: 30px;
+}
+
+/* =============Responsivee ===========*/
+/* Hamburger */
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  background-color: var(--nav-text__color);
+}
+
+@media (max-width: 900px) {
+  .nav-menu li {
+    text-transform: uppercase;
+    margin-left: 2rem;
+  }
+
+  .nav-link {
+    font-size: 18px;
+  }
+
+  .first-nav__navigations li a {
+    font-size: 16px;
+  }
+
+  .shopping-card__counter {
+    font-size: 12px;
+    bottom: 10px;
+    right: 11px;
+    width: 22px;
+    height: 22px;
+    border: 2px solid white;
+  }
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    display: block;
+    position: fixed;
+    left: -100%;
+    top: 3.7rem;
+    flex-direction: column;
+    width: 100%;
+    /* background-color: white;
+     */
+    padding: 10% 0;
+
+    background-color: rgba(255, 255, 255, 0.95);
+    text-align: center;
+    transition: 0.3s;
+    border-top: 1px solid rgb(238, 238, 238);
+  }
+
+  nav {
+    position: fixed;
+  }
+
+  .navbar .nav-link {
+    color: var(--nav-text__color);
+    font-weight: bold;
+  }
+
+  .nav-menu.active {
+    left: 0;
+    /* padding: 10% 0; */
+  }
+
+  .first-nav {
+    display: none;
+  }
+  hr {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .search-bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+
+  .search {
+    display: flex;
+    width: 100%;
+    border: 1px solid #d4d4d4;
+    padding: 5px;
+    align-items: center;
+    border-radius: 5px;
+  }
+
+  .fa-search {
+    margin: 0 4px;
+  }
+
+  .searchTerm {
+    width: 100%;
+    border: none;
+    border-right: none;
+    padding: 5px 10px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: var(--nav-text__color);
+  }
+
+  .fa-heart {
+    font-size: 25px;
+    color: #d4d4d4;
+    margin-left: 15px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .second-nav {
+    flex-wrap: nowrap;
+    color: var(--blue-color);
+  }
+  .fa-heart:hover {
+    color: #ff4858;
+  }
+}
+
+/* Navbar  CSS bottom */

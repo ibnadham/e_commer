@@ -6,11 +6,120 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <script
+    src="https://kit.fontawesome.com/c77e9e2bdf.js"
+    crossorigin="anonymous"
+  ></script>
     <title>Product</title>
 </head>
 
 <body>
+
+
+    <!-- Nav bar -->
+
+    <!-- Header section -->
+    <header class="header">
+        <!-- Navbar component top -->
+        <nav id="navbar" class="nav">
+          <div class="container">
+            <div class="first-nav">
+              <ul class="select-box">
+                <li class="select-box__item">
+                  <div class="custom-select">
+                    <select name="language" id="language">
+                      <option value="0">EN</option>
+                      <option value="0">EN</option>
+                      <option value="1">UZ</option>
+                    </select>
+                  </div>
+                </li>
+                <li>
+                  <div class="custom-select">
+                    <select name="currency" id="currency">
+                      <option value="0">UZS</option>
+                      <option value="1">UZS</option>
+                      <option value="2">USD</option>
+                      <option value="3">Ruble</option>
+                    </select>
+                  </div>
+                </li>
+              </ul>
+              <ul class="first-nav__navigations">
+                <li class="first-nav__item">
+                  <a href="#"><i class="fa-regular fa-user"></i>My profile</a>
+                </li>
+                <li class="shopping-card first-nav__item">
+                  <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                  <p class="shopping-card__counter">3</p>
+                </li>
+                <li class="first-nav__item">
+                  <a href="#">Items</a>
+                </li>
+                <li class="dollor first-nav__item">
+                  <a href="#"
+                    >$0.00<i class="fa-solid fa-magnifying-glass"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <hr />
+            <!-- Second nav   ///////////////// -->
+            <div class="second-nav">
+              <!-- Apears on mobile version -->
+              <ul class="search-bar">
+                <li class="search">
+                  <i class="fa fa-search"></i>
+                  <input
+                    type="text"
+                    class="searchTerm"
+                    placeholder="Search Product"
+                  />
+                </li>
+                <li class="heart"><i class="fa-regular fa-heart"></i></li>
+              </ul>
+              <!-- / Apears on mobile version -->
+
+              search
+              <ul>
+                <li class="logo-item">
+                  <a class="logo" href="#"
+                    ><img src="./img/logo.svg" alt="Brand logo"
+                  /></a>
+                </li>
+              </ul>
+              <ul class="nav-menu">
+                <li class="nav-item">
+                  <a class="active nav-link" href="#">home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">bags</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">sneakers</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">belt</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">contact</a>
+                </li>
+              </ul>
+              <!-- Hamburger -->
+              <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- Navbar component bottom -->
+  
+  
 
 
     <!-- Header Part -->
@@ -299,6 +408,118 @@
 
     </div>
 </body>
-<script src="all.js"></script>
+ 
+
+<!-- Footer component top -->
+
+
+
+<div class="footer-container">
+  <footer class="footer">
+    <div class="first-row">
+      <ul class="footer-content__container">
+        <img
+          class="footer-title footer-logo"
+          src="./img/logo.svg"
+          alt="Brand-Image"
+        />
+        <li class="footer-description">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text
+          ever.Since the 1500s, when an unknown printer.
+        </li>
+      </ul>
+      <ul class="footer-content__container">
+        <p class="footer-title">follow us</p>
+        <li class="footer-description">
+          Since the 1500s, when an unknown printer took a galley of type and
+          scrambled.
+        </li>
+        <li class="follow-icon__links">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+        </li>
+      </ul>
+      <ul class="footer-content__container">
+        <p class="footer-title">contact us</p>
+        <li class="footer-description">
+          E-Comm , 4578 Marmora Road, Glasgow D04 89GR
+        </li>
+      </ul>
+    </div>
+    <div class="second-row">
+      <ul class="footer-content__container">
+        <li class="footer-title second-row__title">information</li>
+        <li class="footer-content__link"><a href="#">about us</a></li>
+        <li class="footer-content__link"><a href="#">information</a></li>
+        <li class="footer-content__link"><a href="#">privacy policy</a></li>
+        <li class="footer-content__link">
+          <a href="#">terms & conditions</a>
+        </li>
+      </ul>
+      <ul class="footer-content__container">
+        <p class="footer-title second-row__title">service</p>
+        <li class="footer-content__link"><a href="#">about us</a></li>
+        <li class="footer-content__link"><a href="#">information</a></li>
+        <li class="footer-content__link"><a href="#">privacy policy</a></li>
+        <li class="footer-content__link">
+          <a href="#">terms & conditions</a>
+        </li>
+      </ul>
+      <ul class="footer-content__container">
+        <p class="footer-title second-row__title">my account</p>
+        <li class="footer-content__link"><a href="#">about us</a></li>
+        <li class="footer-content__link"><a href="#">information</a></li>
+        <li class="footer-content__link"><a href="#">privacy policy</a></li>
+        <li class="footer-content__link">
+          <a href="#">terms & conditions</a>
+        </li>
+      </ul>
+      <ul class="footer-content__container">
+        <p class="footer-title second-row__title">our offers</p>
+        <li class="footer-content__link"><a href="#">about us</a></li>
+        <li class="footer-content__link"><a href="#">information</a></li>
+        <li class="footer-content__link"><a href="#">privacy policy</a></li>
+        <li class="footer-content__link">
+          <a href="#">terms & conditions</a>
+        </li>
+      </ul>
+    </div>
+
+    <hr class="footer-hr" />
+    <div class="deep-footer">
+      <ul>
+        <li class="copyright">
+          © 2022 Ecommerce website by
+          <a href="https://github.com/MuslimDevs11">Muslim Developers</a>
+        </li>
+      </ul>
+      <ul class="partners">
+        <li class="partners-logo">
+          <img
+            src="./img/west.svg"
+            alt="Western Union card icon"
+          />
+        </li>
+        <li class="partners-logo">
+          <img src="./img/master.svg" alt="Master card icon" />
+        </li>
+        <li class="partners-logo">
+          <img src="./img/Paypal.svg" alt="Paypal card icon" />
+        </li>
+        <li class="partners-logo">
+          <img
+            class="visa"
+            src="./img/visa.svg"
+            alt="Visa card icon"
+          />
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <!-- Footer component bottom -->
+
+<script src="./js/all.js"></script>
+<script src="./js/navbar.js"></script>
 
 </html>

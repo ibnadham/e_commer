@@ -1,0 +1,249 @@
+/* ============ Footer  css top =============*/
+/* Google font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-container {
+  position: relative;
+  bottom: 0;
+  background-color: #bcddfe;
+  width: 100%;
+  margin: auto;
+}
+
+.footer {
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+.footer-content__link a {
+  text-decoration: none;
+  color: #22262a;
+  transition: 0.3s;
+}
+
+.footer-content__link a:hover {
+  color: #ff4858;
+}
+
+/* icons top*/
+.fa-twitter {
+  color: #03a9f4;
+}
+
+.fa-facebook-f {
+  color: #385c8e;
+}
+
+.fa-facebook-f,
+.fa-twitter {
+  font-size: 22px;
+  margin: 20px 40px 0 0;
+  transition: 0.3s;
+}
+
+.fa-facebook-f:hover {
+  color: #006aff;
+}
+
+.fa-twitter:hover {
+  color: #03c4f4;
+}
+
+.footer-hr {
+  margin: 70px 0 20px 0;
+  border: 1px solid #f6f7f8;
+}
+
+/* icon bottom */
+
+.first-row,
+.second-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.first-row {
+  padding: 60px 0 30px;
+}
+
+.footer-title {
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+
+.footer-title {
+  margin: 25px 0 20px;
+}
+
+.footer-logo {
+  width: 8rem;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.footer-content__link {
+  line-height: 25px;
+  text-transform: capitalize;
+}
+
+.footer-content__container {
+  max-width: 20rem;
+}
+
+/* Partners section top */
+
+.deep-footer,
+.partners {
+  display: flex;
+}
+
+.deep-footer {
+  justify-content: space-between;
+  padding: 20px 0 60px;
+}
+
+.copyright,
+.copyright a {
+  color: #c1c8ce;
+}
+
+.partners-logo {
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.visa {
+  height: 27px;
+}
+
+/* Partners section bottem */
+
+/* footer Responsive top */
+
+@media (max-width: 1010px) {
+  .footer-logo {
+    width: 11rem;
+  }
+
+  .fa-facebook-f,
+  .fa-twitter {
+    font-size: 25px;
+  }
+
+  /* icon bottom */
+
+  .footer-title {
+    font-size: 25px;
+    margin: 30px 0 20px;
+    font-weight: 600;
+  }
+
+  .footer-content__link {
+    line-height: 28px;
+    font-size: 20px;
+  }
+
+  .footer-description {
+    font-size: 20px;
+  }
+
+  .footer-content__container {
+    max-width: 20rem;
+  }
+
+  .copyright {
+    font-size: 15px;
+  }
+
+  .visa,
+  .partners-logo img {
+    height: 30px;
+  }
+}
+
+@media (max-width: 673px) {
+  .footer-title {
+    margin: 60px 0 20px;
+  }
+
+  .footer-logo {
+    width: 13rem;
+  }
+
+  .fa-facebook-f,
+  .fa-twitter {
+    font-size: 28px;
+  }
+
+  /* icon bottom */
+
+  .footer-title {
+    font-size: 30px;
+  }
+
+  .footer-content__link {
+    line-height: 30px;
+    font-size: 22px;
+  }
+
+  .footer-description {
+    font-size: 22px;
+  }
+
+  .first-row .footer-content__container {
+    max-width: 25rem;
+  }
+
+  .first-row {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .second-row {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 500px) {
+  .second-row {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .deep-footer {
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .deep-footer ul {
+    margin: 10px 0;
+  }
+
+  .copyright {
+    font-size: 18px;
+  }
+}
+
+/* footer Responsive bottom */
+
+/* ============= Footer  css bottom ============= */
